@@ -17,10 +17,16 @@ class _ChallengePageState extends State<ChallengePage> {
         preferredSize: Size.fromHeight(60),
         child: SafeArea(
           top: true,
-          child: QuestionIndicatorWidget(),
+          child: Padding(
+            padding: const EdgeInsets.only(top: 20),
+            child: QuestionIndicatorWidget(),
+          ),
         ),
       ),
-      body: QuizWidget(title: 'Qual o framework mais usado?'),
+      body: Container(
+        padding: EdgeInsets.only(top: 30),
+        child: QuizWidget(title: 'Qual o framework mais usado?'),
+      ),
     );
   }
 }
