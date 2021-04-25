@@ -1,9 +1,12 @@
 import 'package:DevQuiz/core/core.dart';
+import 'package:DevQuiz/home/home_page.dart';
 import 'package:flutter/material.dart';
 
 class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    Future.delayed(Duration(seconds: 2)).then((_) => Navigator.of(context)
+        .pushReplacement(MaterialPageRoute(builder: (_) => HomePage())));
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(

@@ -96,10 +96,26 @@ class _HomePageState extends State<HomePage> {
       );
     } else {
       return Scaffold(
-        body: Center(
-          child: CircularProgressIndicator(
-            valueColor: AlwaysStoppedAnimation<Color>(AppColors.darkGreen),
-          ),
+        body: Stack(
+          children: [
+            Container(
+              decoration: BoxDecoration(
+                gradient: AppGradients.linear,
+              ),
+              child: Center(
+                child: Image.asset(AppImages.logo),
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.only(top: 200),
+              child: Center(
+                child: CircularProgressIndicator(
+                  valueColor:
+                      AlwaysStoppedAnimation<Color>(AppColors.darkGreen),
+                ),
+              ),
+            ),
+          ],
         ),
       );
     }
