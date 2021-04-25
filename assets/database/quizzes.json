@@ -11,15 +11,33 @@
                     {"title": "Não estou curtindo"},
                     {"title": "Estou curtindo"},
                     {"title": "Muito top"},
-                    {"title": "Amando muito"}
+                    {"title": "Amando muito", "isRight": true}
                 ]
             },
             {
                 "title": "Flutter é um framework ou biblioteca?",
                 "awnsers": [
-                    {"title": "Framework"},
+                    {"title": "Framework","isRight": true},
                     {"title": "Biblioteca"},
                     {"title": "Framework e biblioteca"},
+                    {"title": "Não, é uma linguagem"}
+                ]
+            },
+            {
+                "title": "O que é MobX?",
+                "awnsers": [
+                    {"title": "Framework"},
+                    {"title": "Gerenciador de status","isRight": true},
+                    {"title": "Framework e biblioteca"},
+                    {"title": "Não, é uma linguagem"}
+                ]
+            },
+            {
+                "title": "O que faz o MobX?",
+                "awnsers": [
+                    {"title": "Framework"},
+                    {"title": "Gerenciador de status"},
+                    {"title": "Framework e biblioteca","isRight": true},
                     {"title": "Não, é uma linguagem"}
                 ]
             }
@@ -28,13 +46,13 @@
     {
         "title": "Node JS",
         "imagem": "blocks",
-        "questionAwnsered": 1,
+        "questionAwnsered": 3,
         "level": "facil",
         "questions": [
             {
                 "title": "O nodejs é o melhor?",
                 "awnsers": [
-                    {"title": "Node é o melhor"},
+                    {"title": "Node é o melhor","isRight": true},
                     {"title": "Node é um dos melhores"},
                     {"title": "node é massa"},
                     {"title": "Não, existem melhores"}
@@ -43,7 +61,61 @@
             {
                 "title": "Onde o node roda?",
                 "awnsers": [
+                    {"title": "No V8 do google Chrome","isRight": true},
+                    {"title": "Na JVM"},
+                    {"title": "Framework e biblioteca"},
+                    {"title": "Não, é uma linguagem"}
+                ]
+            },
+            {
+                "title": "Onde o node roda?",
+                "awnsers": [
                     {"title": "No V8 do google Chrome"},
+                    {"title": "Na JVM"},
+                    {"title": "Framework e biblioteca","isRight": true},
+                    {"title": "Não, é uma linguagem"}
+                ]
+            },
+            {
+                "title": "Onde o node roda?",
+                "awnsers": [
+                    {"title": "No V8 do google Chrome"},
+                    {"title": "Na JVM"},
+                    {"title": "Framework e biblioteca","isRight": true},
+                    {"title": "Não, é uma linguagem"}
+                ]
+            },
+            {
+                "title": "Onde o node roda?",
+                "awnsers": [
+                    {"title": "No V8 do google Chrome"},
+                    {"title": "Na JVM","isRight": true},
+                    {"title": "Framework e biblioteca"},
+                    {"title": "Não, é uma linguagem"}
+                ]
+            },
+            {
+                "title": "Onde o node roda?",
+                "awnsers": [
+                    {"title": "No V8 do google Chrome"},
+                    {"title": "Na JVM"},
+                    {"title": "Framework e biblioteca","isRight": true},
+                    {"title": "Não, é uma linguagem"}
+                ]
+            },
+            {
+                "title": "Onde o node roda?",
+                "awnsers": [
+                    {"title": "No V8 do google Chrome","isRight": true},
+                    {"title": "Na JVM"},
+                    {"title": "Framework e biblioteca"},
+                    {"title": "Não, é uma linguagem"}
+                ]
+            },
+            {
+                "title": "Onde o node roda?",
+                "awnsers": [
+                    {"title": "No V8 do google Chrome","isRight": true},
                     {"title": "Na JVM"},
                     {"title": "Framework e biblioteca"},
                     {"title": "Não, é uma linguagem"}
@@ -60,7 +132,7 @@
             {
                 "title": "O nodejs é o melhor?",
                 "awnsers": [
-                    {"title": "Node é o melhor"},
+                    {"title": "Node é o melhor","isRight": true},
                     {"title": "Node é um dos melhores"},
                     {"title": "node é massa"},
                     {"title": "Não, existem melhores"}
@@ -69,7 +141,7 @@
             {
                 "title": "Onde o node roda?",
                 "awnsers": [
-                    {"title": "No V8 do google Chrome"},
+                    {"title": "No V8 do google Chrome","isRight": true},
                     {"title": "Na JVM"},
                     {"title": "Framework e biblioteca"},
                     {"title": "Não, é uma linguagem"}
@@ -80,7 +152,7 @@
     {
         "title": "Android Nativo",
         "imagem": "blocks",
-        "questionAwnsered": 1,
+        "questionAwnsered": 9,
         "level": "facil",
         "questions": [
             {
@@ -88,7 +160,7 @@
                 "awnsers": [
                     {"title": "Node é o melhor"},
                     {"title": "Node é um dos melhores"},
-                    {"title": "node é massa"},
+                    {"title": "node é massa","isRight": true},
                     {"title": "Não, existem melhores"}
                 ]
             },
@@ -96,6 +168,78 @@
                 "title": "Onde o node roda?",
                 "awnsers": [
                     {"title": "No V8 do google Chrome"},
+                    {"title": "Na JVM"},
+                    {"title": "Framework e biblioteca"},
+                    {"title": "Não, é uma linguagem","isRight": true}
+                ]
+            },
+            {
+                "title": "O nodejs é o melhor?",
+                "awnsers": [
+                    {"title": "Node é o melhor"},
+                    {"title": "Node é um dos melhores","isRight": true},
+                    {"title": "node é massa"},
+                    {"title": "Não, existem melhores"}
+                ]
+            },
+            {
+                "title": "Onde o node roda?",
+                "awnsers": [
+                    {"title": "No V8 do google Chrome","isRight": true},
+                    {"title": "Na JVM"},
+                    {"title": "Framework e biblioteca"},
+                    {"title": "Não, é uma linguagem"}
+                ]
+            },
+            {
+                "title": "O nodejs é o melhor?",
+                "awnsers": [
+                    {"title": "Node é o melhor"},
+                    {"title": "Node é um dos melhores","isRight": true},
+                    {"title": "node é massa"},
+                    {"title": "Não, existem melhores"}
+                ]
+            },
+            {
+                "title": "Onde o node roda?",
+                "awnsers": [
+                    {"title": "No V8 do google Chrome","isRight": true},
+                    {"title": "Na JVM"},
+                    {"title": "Framework e biblioteca"},
+                    {"title": "Não, é uma linguagem"}
+                ]
+            },
+            {
+                "title": "O nodejs é o melhor?",
+                "awnsers": [
+                    {"title": "Node é o melhor"},
+                    {"title": "Node é um dos melhores","isRight": true},
+                    {"title": "node é massa"},
+                    {"title": "Não, existem melhores"}
+                ]
+            },
+            {
+                "title": "Onde o node roda?",
+                "awnsers": [
+                    {"title": "No V8 do google Chrome","isRight": true},
+                    {"title": "Na JVM"},
+                    {"title": "Framework e biblioteca"},
+                    {"title": "Não, é uma linguagem"}
+                ]
+            },
+            {
+                "title": "O nodejs é o melhor?",
+                "awnsers": [
+                    {"title": "Node é o melhor"},
+                    {"title": "Node é um dos melhores","isRight": true},
+                    {"title": "node é massa"},
+                    {"title": "Não, existem melhores"}
+                ]
+            },
+            {
+                "title": "Onde o node roda?",
+                "awnsers": [
+                    {"title": "No V8 do google Chrome","isRight": true},
                     {"title": "Na JVM"},
                     {"title": "Framework e biblioteca"},
                     {"title": "Não, é uma linguagem"}
@@ -112,7 +256,7 @@
             {
                 "title": "O nodejs é o melhor?",
                 "awnsers": [
-                    {"title": "Node é o melhor"},
+                    {"title": "Node é o melhor","isRight": true},
                     {"title": "Node é um dos melhores"},
                     {"title": "node é massa"},
                     {"title": "Não, existem melhores"}
@@ -121,7 +265,7 @@
             {
                 "title": "Onde o node roda?",
                 "awnsers": [
-                    {"title": "No V8 do google Chrome"},
+                    {"title": "No V8 do google Chrome","isRight": true},
                     {"title": "Na JVM"},
                     {"title": "Framework e biblioteca"},
                     {"title": "Não, é uma linguagem"}
@@ -138,7 +282,7 @@
             {
                 "title": "O nodejs é o melhor?",
                 "awnsers": [
-                    {"title": "Node é o melhor"},
+                    {"title": "Node é o melhor","isRight": true},
                     {"title": "Node é um dos melhores"},
                     {"title": "node é massa"},
                     {"title": "Não, existem melhores"}
@@ -147,7 +291,7 @@
             {
                 "title": "Onde o node roda?",
                 "awnsers": [
-                    {"title": "No V8 do google Chrome"},
+                    {"title": "No V8 do google Chrome","isRight": true},
                     {"title": "Na JVM"},
                     {"title": "Framework e biblioteca"},
                     {"title": "Não, é uma linguagem"}
@@ -164,7 +308,7 @@
             {
                 "title": "O nodejs é o melhor?",
                 "awnsers": [
-                    {"title": "Node é o melhor"},
+                    {"title": "Node é o melhor","isRight": true},
                     {"title": "Node é um dos melhores"},
                     {"title": "node é massa"},
                     {"title": "Não, existem melhores"}
@@ -173,7 +317,7 @@
             {
                 "title": "Onde o node roda?",
                 "awnsers": [
-                    {"title": "No V8 do google Chrome"},
+                    {"title": "No V8 do google Chrome","isRight": true},
                     {"title": "Na JVM"},
                     {"title": "Framework e biblioteca"},
                     {"title": "Não, é uma linguagem"}
