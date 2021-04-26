@@ -7,7 +7,7 @@ import 'package:DevQuiz/shared/models/awnser_model.dart';
 class AwnserWidget extends StatefulWidget {
   final AwnserModel awnser;
   final bool isSelected;
-  final VoidCallback onTap;
+  final ValueChanged<bool> onTap;
 
   const AwnserWidget({
     Key? key,
@@ -47,7 +47,9 @@ class _AwnserWidgetState extends State<AwnserWidget> {
     return Padding(
       padding: const EdgeInsets.all(16.0),
       child: GestureDetector(
-        onTap: widget.onTap,
+        onTap: () {
+          widget.onTap(widget.awnser.isRight);
+        },
         child: Container(
           padding: EdgeInsets.all(16),
           decoration: BoxDecoration(

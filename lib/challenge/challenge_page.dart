@@ -1,19 +1,22 @@
-import 'package:DevQuiz/challenge/challenge_controller.dart';
-import 'package:DevQuiz/challenge/widgets/quiz/quiz_controller.dart';
-import 'package:DevQuiz/result/result_page.dart';
 import 'package:flutter/material.dart';
 
+import 'package:DevQuiz/challenge/challenge_controller.dart';
 import 'package:DevQuiz/challenge/widgets/next_button/next_button_widget.dart';
 import 'package:DevQuiz/challenge/widgets/question_indicator/question_indicator_widget.dart';
+import 'package:DevQuiz/challenge/widgets/quiz/quiz_controller.dart';
 import 'package:DevQuiz/challenge/widgets/quiz/quiz_widget.dart';
 import 'package:DevQuiz/core/core.dart';
+import 'package:DevQuiz/result/result_page.dart';
 import 'package:DevQuiz/shared/models/question_model.dart';
 
 class ChallengePage extends StatefulWidget {
   final List<QuestionModel> questions;
+  final String titleQuiz;
+
   ChallengePage({
     Key? key,
     required this.questions,
+    required this.titleQuiz,
   }) : super(key: key);
 
   @override
@@ -44,6 +47,13 @@ class _ChallengePageState extends State<ChallengePage> {
       );
   }
 
+  void onSelected(bool value) {
+    if (value) {
+      controller.awnsersRight++;
+    }
+    nextPage();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -71,7 +81,7 @@ class _ChallengePageState extends State<ChallengePage> {
           children: widget.questions
               .map(
                 (question) => QuizWidget(
-                  onChange: nextPage,
+                  onSelected: onSelected,
                   question: question,
                 ),
               )
@@ -106,7 +116,11 @@ class _ChallengePageState extends State<ChallengePage> {
                         Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => ResultPage(),
+                            builder: (context) => ResultPage(
+                              result: controller.awnsersRight,
+                              titleQuiz: widget.titleQuiz,
+                              lenght: widget.questions.length,
+                            ),
                           ),
                         );
                       },
